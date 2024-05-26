@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poetsen One", sans-serif;
+}
+nav {
+  box-sizing: border-box;
+  width: 100%;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  display: flex;
+  font-size: 1.7rem;
+  height: auto;
+  justify-content: space-between;
+
+  padding: 25px 40px 25px 50px;
+}
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+#hero {
+  height: auto;
+  background-color: #8e3535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  flex-direction: column;
+  gap: 3rem;
+}
+.hero-main {
+  height: 90%;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15vw;
+}
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 40% 60% 70% 30% / 70% 40% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}
+
+.hero-image {
+  -webkit-animation: morph 8s ease-in-out infinite;
+  animation: morph 8s ease-in-out infinite;
+  background-image: url("/assets/mirkoterzic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #2d2e32;
+  height: 20rem;
+
+  transition: all 1s ease-in-out;
+  width: 20rem;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+}
+.hero-text {
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.skills {
+  display: flex;
+  gap: 2rem;
+  text-align: left;
+  font-size: 1.2rem;
+  align-items: center;
+}
+
+.logos ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.about {
+  background-image: url("/assets/about=background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 10vh 0;
+  align-items: center;
+}
+.about-text {
+  width: 50%;
+  padding-right: 2rem;
+}
+.about-text p {
+  font-style: italic;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+}
+.about-text ul {
+  list-style: none;
+}
+.about-image {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-image img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 2rem;
+}
+.highlight {
+  color: aqua;
+}
+
+.projects {
+  padding: 10vh 0;
+}
+.projects h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 18rem;
+  height: 18rem;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
