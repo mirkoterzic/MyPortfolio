@@ -25,7 +25,7 @@ nav {
 
 #hero {
   height: auto;
-  background-color: #8e3535;
+  background-color: #239bca;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,4 +174,38 @@ nav {
 
 .next {
   right: 0;
+}
+
+.contact {
+  background-color: #ececec;
+  padding: 50px 0;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  color: #2d2e32;
+}
+
+.contact-links {
+  margin-top: 20px;
+}
+
+.contact-link {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contact-link:hover {
+  background-color: #0056b3;
 }
